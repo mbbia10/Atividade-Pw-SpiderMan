@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    text-align: center;
+    background: url('gif.gif') center/cover no-repeat fixed; /* GIF como fundo da página */
+    
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh; /* Tela inteira */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 10px 20px;
+    gap: 50px; /* Espaço entre os itens */
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro semi-transparente */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.intro-text h1 {
+    font-family: 'Space Grotesk', sans-serif; /* Fonte estilosa e minimalista */
+    font-size: 32px; /* Diminui o tamanho */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 40px;
+    padding: 50px 20px;
+    background: black; /* Para destacar a seção de filmes */
+}
+
+.movie {
+    text-align: center;
+}
+
+.movie img {
+    width: 250px; /* Ajuste do tamanho dos pôsteres */
+    height: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.movie p {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+}
