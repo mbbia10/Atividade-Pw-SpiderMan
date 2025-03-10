@@ -17,7 +17,7 @@ body {
 }
 .navbar {
     width: 100%;
-    position: fixed; /* Fixa a navbar no topo */
+    position: fixed; 
     top: 0;
     left: 0;
     background-color: #000;
@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
+    z-index: 1000; 
 }
 
 .nav-link {
@@ -42,9 +42,9 @@ body {
     border-radius: 5px;
 }
 
-/* Adiciona espaço para o conteúdo não ficar escondido atrás da navbar */
+
 body {
-    padding-top: 60px; /* Ajuste conforme necessário */
+    padding-top: 60px; 
 }
 
 .news-section {
